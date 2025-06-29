@@ -101,6 +101,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
+        android:id="@+id/btnYaTengoCuenta"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"

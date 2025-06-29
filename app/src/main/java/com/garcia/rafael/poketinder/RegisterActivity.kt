@@ -49,13 +49,8 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         // "Ya tengo una cuenta"
-        val btnYaTengoCuenta = findViewById<Button>(R.id.btnRegister).rootView.findViewById<Button>(R.id.btnRegister).rootView.findViewById<Button>(R.id.btnRegister)
-        // El botón "Ya tengo una cuenta" es el siguiente Button en el layout, así que:
-        val btnYaTengoCuenta2 = (binding.root.findViewById<Button>(R.id.btnRegister)).rootView.findViewById<Button>(R.id.btnRegister).rootView.findViewById<Button>(R.id.btnRegister)
-        // Pero mejor, accedemos por índice:
-        val parent = binding.btnRegister.parent as? android.view.ViewGroup
-        val btnYaTengoCuentaFinal = parent?.getChildAt(parent.indexOfChild(binding.btnRegister) - 1) as? Button
-        btnYaTengoCuentaFinal?.setOnClickListener {
+        val btnYaTengoCuenta = findViewById<Button>(R.id.btnYaTengoCuenta)
+        btnYaTengoCuenta?.setOnClickListener {
             finish()
         }
 
