@@ -17,7 +17,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         loginViewModel = LoginViewModel(this)
         observeValues()
-        loginViewModel.registerUser()
     }
 
 
@@ -50,3 +49,4 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 }
+

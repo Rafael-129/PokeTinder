@@ -18,11 +18,6 @@ class LoginViewModel(
             it.setSharedPreference(context)
         }
 
-    fun registerUser() {
-        sharedPreferencesRepository.saveUserEmail("rafael.garcia.c@tecsup.edu.pe")
-        sharedPreferencesRepository.saveUserPassword("aL955TEC7450")
-    }
-
     fun validateInputs(email: String, password: String) {
         if (isEmptyInputs(email, password)) {
             inputsError.postValue(true)
@@ -46,4 +41,5 @@ class LoginViewModel(
 
     private fun isEmptyInputs(email: String, password: String) = email.isEmpty() || password.isEmpty()
 }
+
 
